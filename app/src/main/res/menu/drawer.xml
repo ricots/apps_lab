@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_lab"
+            android:checked="false"
+            android:icon="@drawable/home"
+            android:title="@string/navigation_item_1" />
+
+        <item
+            android:id="@+id/berita_lab"
+            android:checked="false"
+            android:icon="@drawable/journal"
+            android:title="@string/Berita" />
+
+        <item
+            android:id="@+id/jadwal_lab"
+            android:checked="false"
+            android:icon="@drawable/agenda"
+            android:title="@string/jadwal" />
+
+        <item
+            android:id="@+id/kritik_saran"
+            android:checked="false"
+            android:icon="@drawable/check"
+            android:title="@string/kritik" />
+
+
+        <item
+            android:id="@+id/keluar"
+            android:checked="false"
+            android:icon="@drawable/icon"
+            android:title="@string/keluar" />
+    </group>
+</menu>

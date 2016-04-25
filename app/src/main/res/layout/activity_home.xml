@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.lab.app_lab.home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln1">
+        <TextView
+            android:id="@+id/txt_prakata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Selamat datang di Laboratorium komputer dan Internet Universitas Kanjuruhan Malang.
+
+Laboratorium Komputer adalah unit yang ada di Universitas kanjuruhan Malang  dan membawahi beberapa pelatihan/ perkuliahan yaitu aplikasi komputer
+
+Laboratorium komputer merupakan tempat riset ilmiah, eksperimen, pengukuran ataupun pelatihan ilmiah yang berhubungan dengan ilmu komputer dan memiliki beberapa komputer dalam satu jaringan untuk penggunaan oleh kalangan tertentu.
+
+Praktikum Mahasiswa adalah kegiatan proses belajar mengajar yang terjadwal untuk mempraktekkan ilmu yang diperoleh mahasiswa selama kuliah tatap muka di bawah koordinator dosen pengampu mata kuliah" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ln1"
+        android:id="@+id/liner1">
+
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:src="@drawable/microsoft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageView
+                android:src="@drawable/unikama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </ViewFlipper>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lab.app_lab">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/home"
+        android:label="Apps lab komputer"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".login"
+            android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
+
+    <activity android:name=".detail">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.lab.app_lab.detail" />
+    </activity>
+        <activity android:name=".MainActivity"/>
+
+            <activity android:name=".registrasi" />
+            <activity android:name="com.lab.app_lab.Jadwal_lab" />
+            <activity android:name="com.lab.app_lab.kritik_saran" />
+            <activity android:name=".detail_jadwal" />
+
+
+
+    </application>
+
+</manifest>

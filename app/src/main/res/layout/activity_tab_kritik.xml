@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/gone_npm"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--android:layout_weight="@integer/snackbar_text_max_lines" -->
+        <Spinner
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/lokasi"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtkritik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="masukkan kritik dan saran" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pilih gambar"
+        android:background="@color/PrimaryColor"
+        android:id="@+id/buttonChoose" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/image_not"
+        android:id="@+id/imgsrc" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtjudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="masukkan judul gambar" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button android:id="@+id/btn_kritik"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="kritik dan saran"
+        android:background="@color/PrimaryColor"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>
+
+

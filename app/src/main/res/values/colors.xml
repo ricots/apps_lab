@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#F50057</color>
+    <color name="PrimaryDarkColor">#C51162</color>
+
+    <color name="nav_drawer_item_icon_normal">#F50057</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="primary">#004D40</color>
+    <color name="primaryDark">#004D40</color>
+    <color name="textPrimary">#004D40</color>
+</resources>

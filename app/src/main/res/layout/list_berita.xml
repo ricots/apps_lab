@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"  />
+
+
+    <!---movie title-->
+    <TextView
+        android:id="@+id/id_kgt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view"
+        android:layout_toRightOf="@+id/image_view"
+        android:text="ya allah"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ya allah"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_below="@+id/id_kgt"
+        android:textSize="17dp" />
+    <!--rate-->
+    <TextView
+        android:id="@+id/kegiatan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/image_view"
+        android:text="tes"
+        android:textSize="15dp" />
+    <!--genre-->
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kegiatan"
+        android:layout_toRightOf="@+id/image_view"
+        android:text=""
+        android:textSize="13dp" />
+    <!--year-->
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/image_view"
+        android:text="tess"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/slsai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_view"
+        android:gravity="right"
+        android:visibility="gone"
+        android:layout_below="@+id/jam"
+        android:text="ya allah"
+        android:textSize="12dp" />
+</RelativeLayout>
